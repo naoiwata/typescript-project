@@ -20,8 +20,8 @@ gulp.task('watch', function() {
 gulp.task('ts', function() {
   gulp.src(paths.ts)
     .pipe(ts())
-    // .pipe(uglify())
-    // .pipe(concat('./all.min.js'))
+    .pipe(uglify())
+    .pipe(concat('./all.min.js'))
     .pipe(gulp.dest('./dist/js/'));
 });
 
