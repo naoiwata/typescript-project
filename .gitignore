@@ -9,3 +9,4 @@ npm-debug.log
 dist/*.html
 dist/**/
 .DS_Store
+.gulp-tsc-tmp-*

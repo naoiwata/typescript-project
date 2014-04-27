@@ -1,15 +1,15 @@
-var gulp = require('gulp')
-var ts = require('gulp-tsc')
-var uglify = require('gulp-uglify')
-var concat = require('gulp-concat')
-var connect = require('gulp-connect')
-var jade = require('gulp-jade')
-var stylus = require('gulp-stylus')
+var gulp = require('gulp');
+var ts = require('gulp-tsc');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var connect = require('gulp-connect');
+var jade = require('gulp-jade');
+var stylus = require('gulp-stylus');
 var paths = {
   ts: ['./src/js/*.ts'],
   jade: ['./src/*.jade'],
   styl: ['./src/css/*.styl'],
-}
+};
 
 gulp.task('watch', function() {
   gulp.watch(paths.ts, ['ts']);
