@@ -1,7 +1,7 @@
-var hoge = 'hello';  // ok
-var hoge2 = 'hello': string;  // ok
+var hoge = "hello";  // ok
+var hoge2 = "hello": string;  // ok
 var fuga: number = 10;  // ok
-// var piyo: number = 'hoge';  // コンパイルエラー
+// var piyo: number = "hoge";  // コンパイルエラー
 
 var hogehoge: string = hoge;  // ok
 // var fugafuga: number = hoge;  // コンパイルエラー
@@ -13,7 +13,7 @@ function square(n: number): number {
 }
 
 console.info(square(3)); // ok
-// console.info(square('hoge')); // コンパイルエラー
+// console.info(square("hoge")); // コンパイルエラー
 
 // ok
 function square(n) {
